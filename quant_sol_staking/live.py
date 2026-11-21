@@ -30,7 +30,7 @@ KEY_PATH = Path(
 )
 
 POSITION_LAMPORTS = int(float(os.environ.get("QSS_POSITION_SOL", "1")) * 1e9)
-RESERVE_LAMPORTS = int(float(os.environ.get("QSS_RESERVE_SOL", "0.1")) * 1e9)
+RESERVE_LAMPORTS = int(float(os.environ.get("QSS_RESERVE_SOL", "0.09")) * 1e9)
 NEED_LAMPORTS = POSITION_LAMPORTS + RESERVE_LAMPORTS
 POLL_SEC = int(os.environ.get("QSS_POLL_SEC", "60"))
 MAX_POSITIONS = 1

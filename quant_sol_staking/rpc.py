@@ -30,7 +30,7 @@ def rpc(method: str, params: list[Any], timeout: float = 30.0) -> Any:
 
 
 def lamports_sol(pk: str) -> int:
-    return int(rpc("getBalance", [pk])["value"])
+    return int(rpc("getBalance", [pk, {"commitment": "confirmed"}])["value"])
 
 
 def ata(owner: str, mint: str) -> str:
