@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.json
+!data/processed/*.csv
+data/live/
+logs/
+*.so
+id.json
+keypair.json
+.python-version
